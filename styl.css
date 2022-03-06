@@ -1,0 +1,61 @@
+body {
+  background-image: linear-gradient(180deg, beige, Aliceblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Comic Sans, cursive;
+  margin-left: 10%; 
+  margin-right: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: midnightblue;
+    font-size: xxx-large;
+}
+
+footer {
+    color: darkgray;
+    text-align: center;
+}
+.Example{
+    color: teal;
+}
+td,th {
+    text-align: left;
+    border-bottom: 1px solid rebeccapurple;
+}
+table {
+    font-style: italic;
+    font-size: large;
+}
+.Designers {
+    color: SlateGray;
+}
+.Core {
+    color: green;
+}
+.Outreach {
+    color: brown;
+}
+.Goals {
+    color: firebrick;
+    font-size: large;
+}
+li {
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

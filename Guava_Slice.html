@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+  <title>Guava_Slice</title>
+  <link rel="icon" type="image/gif/png" href="cat1.png">
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body onload="init()">
+<h1>Team Briefing</h1>
+<table>
+    <tr><th>No.</th><th>Role</th><th>Type of job</th><th>Staff</th></tr>
+    
+    <tr class="Designers"><td>1</td><td>Video Editor</td><td>Promotional,Cutscenes</td><td>Andy,KomalDeep</td></tr>
+    <tr class="Designers"><td>2</td><td>2D Designers</td><td>Logo(Company,Game,Loading Screens)<hr>Graphics(UI,Sprites & Animation)</td><td>Andy,SaiPraveen<hr>(Required)</td></tr>
+    <tr class="Designers"><td>3</td><td>3D Designers(Model,Animation)</td><td>Characters,Environmental Assets<hr>Animation(Bone animation,Rigging...)</td><td>(Required)</td></tr>
+    <tr class="Designers"><td>4</td><td>Level Designers</td><td>MDA Framework</td><td>Subhadeep</td></tr>
+    <tr class="Core"><td>5</td><td>Music</td><td>Ambience and SFX</td><td>Arindam</td></tr>
+    <tr class="Core"><td>6</td><td>Programmers</td><td>Providing functionality (Clean Code)</td><td>KomalDeep,Abhisht,DeepKaran,Aakash</td></tr>
+    <tr class="Core"><td>7</td><td>Network Administrators</td><td>Server Management</td><td>Aakash</td></tr>
+    <tr class="Outreach"><td>8</td><td>Promotion & Outreach</td><td>Ideate on & Get it installed to players</td><td>Manan,Nishtha</td></tr>
+    <tr class="Outreach"><td>9</td><td>Customer Support</td><td>Q&A and grievance monitoring</td><td>Manan,Nishtha, Ayushi</td></tr>
+    <tr class="Outreach"><td>10</td><td>Web Developer</td><td>Website for the game and Company</td><td>Andy,Abhisht,DeepKaran</td></tr>
+    <tr><td>11</td><td>Knowledge base Representation</td><td>Scripting,Story Mapping,Iteration & Updates,Soft Engg.</td><td>Subhadeep</td></tr>
+    <tr><td>12</td><td>TechLead <td>Overseeing the Team & Project</td><td>Subhadeep</td></tr>
+    <tr><td>13</td><td>Investors</td><td>$Ads,Server cost,PlayerBase Maintenance</td><td>Funds</td></tr>
+</table>
+
+<h2>Goals</h2>
+<ul class="Goals">
+  <li>To deliver to the players a high fidelity, latency free eye-catching scenario with immersing sounds and animation that can be a memorable experience.</li>
+  <li>To provide a buttery smooth highly optimised game.</li>
+  <li>To make it available to most players & platforms.</li>
+  <li>Squeeze out as much performance as possible while keeping the game visually attractive.</li>
+</ul>
+
+<h2>Coding Principles</h2>
+<ol>
+  <li>High modularity & Highly layered</li>
+  <p class="Example">This is good for the eyes & mind of the coder and also the system.
+    <br>We never want a monolithic style code.
+  </p>
+  <li>Max 60 lines</li>
+  <p class="Example">There shouldn't be more than 50-60 lines in a particular script if it excedes we should extend it into a new script.
+  </p>
+  <li>High Cohession & Low coupling</li>
+  <p class="Example">Example: We require a particular function from a set of modules A,B,C,D and we call module A.Module A finds it in C and brings back the info.
+    <br>That's the correct approach.
+    <br>If it brought all the modules instead it's a bad design and we call it coupled. It often makes a laggy game
+  </p>
+  <li>Except class names Follow Camel Case and use proper variable names</li>
+  <p class="Example">
+    <b>public string inventoryBasics;
+    <br>public class Animal{.......};</b><br>
+    <br>It makes it easy for your collborators to understand your code & contribute and is very essential for long term maintenance.
+    <br> This convention is also adhered to in most languages like Java/C#.
+  </p>
+  <li>private variables start with _</li>
+  <p class="Example">
+    <b>private int _playerHealth = 0;</b>
+  </p>
+  <li>Avoid braces for single line loops/Conditionals</li>
+  <p class="Example">
+    <b>while(inventoryList--)
+    <br>&nbsp&nbsp&nbsp cout &lt&lt inventoryList &lt&lt endl;</b>
+  </p>
+  <li>Always write a short comment of what something performs</li>
+  <p class="Example">
+    <b>//disablesPanicMusic when idle
+    <br>if(!attacked)
+    <br>&nbsp&nbsp&nbsp disablePanicMusic();</b>
+  </p>
+  <li>Write a short doc in the beginning of the class regarding what it performs</li>
+  <p class="Example">
+    <b>/*
+      <br>Date: xx-xx-20xx
+      <br>@author: Abhisht,DeepKaran,Aakash
+      <br>The class is responsible for animal movement and all sounds & animations related to it.
+      <br>(A shorthand Algo) [optional]
+      <br>....
+      <br>....
+      <br>....
+      <br>*/</b>
+  </p>
+</ol>
+<h2>Optimisation</h2>
+<p class="Goals">Some areas to take care of -</p>
+<ul>
+  <li>VSync</li>
+  <li>Code reveiw</li>
+  <li>Garbage collector</li>
+  <li>Code reveiw</li>
+  <li>Draw Call Batching</li>
+  <li>Baked Lights & Light Probes</li>
+  <li>Shadows</li>
+  <li>Polygon Count</li>
+  <li>Combining Meshes</li>
+  <li>Textures</li>
+  <li>LOD Groups</li>
+  <li>GPU Instancing</li>
+  <li>Occlusion Culling</li>
+</ul>
+<a href="https://youtu.be/uXRURWwabF4" target="_blank">Unity Profiling</a>
+
+<h2>Level Design</h2>
+<a href="https://www.youtube.com/watch?v=ATX7kmET4zE" target="_blank">Create a Photorealistic World in UE4</a>
+<h4>Speed Level Design</h4>
+<a href="https://www.youtube.com/watch?v=c9H0ItinODg" target="_blank">The Wasteland</a>
+<a href="https://www.youtube.com/watch?v=cUfMqnbo5A4" target="_blank">Post Apocalyptic City</a>
+<h2>Inspirations</h2>
+<a href="https://www.youtube.com/playlist?list=PLAD6GPh5AihFS508ZHlyD3aGdEC9-y3U8" target="_blank">LifeAfter Music</a>
+<a href="https://www.youtube.com/watch?v=Pg75bfkegtU" target="_blank">Memories of Australia</a>
+<h2>Learn Unreal</h2>
+<a href="https://greenrain.io/unreal-engine-training/" target="_blank">Green Rain (Weekly)</a>
+<br><br>Follow any tutorial you like.Here's some suggestion. The greater the variety of learning in the team the better.<br>
+<a href="https://www.youtube.com/watch?v=3jM_VLzRqlE" target="_blank">Learn UE4 from Blender</a>
+
+<h1>Phase 1</h1>
+<p class="Goals">Tasks -</p>
+Pick a tutorial and learn Unreal. Spend atleast 30hrs on it to be proficient and ready for work on May X [ X = ETE_endDate + 1 ]
+<p class="Designers">Whoever wants to help with Design and animation -</p>
+<ul>
+  <li>Create a Photorealistic scene of a terrain (Forest or snowy mountain or swamps etc).</li>
+  <li>Create, Edit or Import various props using Blender/Maya and animate them.</li>
+  <li>Create, Edit or Import Characters with animation with correlation with the scene you created.</li>
+</ul>
+<p class="Goals">Deadline of the task => May X</p>
+<footer>A product of Guava_Slice<br/>@Author: {List of contributors}</footer>
+</body>
+</html>
